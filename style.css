@@ -2185,4 +2185,70 @@ body {
     padding: 10px;
     margin: 10px;
     width: calc(33.33% - 20px);
-} 
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+      position: absolute;
+      top: 70px;
+      right: -100%;
+      width: 200px;
+      height: 100vh;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+      transition: right 0.3s ease;
+      z-index: 100;
+    }
+  
+    .navbar.active {
+      right: 0;
+    }
+  
+    .mobile {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    #bar {
+      font-size: 24px;
+      cursor: pointer;
+      color: #1a1a1a;
+    }
+  
+    #lg-bag {
+      display: none;
+    }
+  }
+  
+  
+@media (max-width: 476px) {
+  #cart-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item img {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .price-details {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .price-details button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
