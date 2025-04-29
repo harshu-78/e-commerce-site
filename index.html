@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> E-commerce </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <section id="header">
+    <a href="#"><img src="img/logo banner.png" class="logo" alt="Logo"></a>
+
+    <div>
+        <ul class="navbar">
+         <div class="search-container">
+                <form action="" class="search" id="search-bar">
+                    <input type="search" placeholder="Search" class="search__input">
+                    <div class="search__button" id="search-button">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass search__icon"></i>
+                        <i class="fa-solid fa-xmark  search__close"></i>
+                    </div>
+                </form> 
+            </div> 
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+        </ul>
+    </div>
+    <div class="mobile">
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <i  id="bar" class="fas fa-outdent"></i>
+    </div>
+  </section>
+
+
+  <section id="hero" >
+    <div class="hero-container">
+        <div class="slider">
+          <img src="img/sale.png">
+          <img src="img/Men's Fashion Banner.png">
+          <img src="img/clothera.png">
+          <div class="nav-indicator">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+    </div>
+ </section>
+
+
+  <section id="feature" class="section-p1 ">
+    <div class="fe-box">
+        <img src="img/features/f1.png">
+        <h4>Free Shipping</h4>
+    </div>
+    <div class="fe-box">
+        <img src="img/features/f2.png">
+        <h4>Online Order </h4>
+    </div>
+    <div class="fe-box">
+        <img src="img/features/f3.png">
+        <h4>Save Money</h4>
+    </div>
+    <div class="fe-box">
+        <img src="img/features/f4.png">
+        <h4>Promotions</h4>
+    </div>
+    <div class="fe-box">
+        <img src="img/features/f5.png">
+        <h4>Happy Sell</h4>
+    </div>
+    <div class="fe-box">
+        <img src="img/features/f6.png">
+        <h4>F24/7 Support</h4>
+    </div>
+  </section>
+
+
+  <section id="product1" class="section-p1"> 
+    <h1>Featured Products</h1>
+    <div class="pro-container">
+        <div class="pro">
+            <img src="img/products/cl9.jpg">
+            <div class="des">
+                <span>SnakeTiger</span>
+                <h5>Women Bodycon Black Dress</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹2345</h4>
+            </div>
+            <button class="cart-button" onclick="addToCart('product1', 'Women Bodycon Black Dress', 2345, 'img/products/cl9.jpg')">
+                <span class="add-to-cart">Add to cart</span>
+                <span class="added">Added</span>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-box"></i>
+            </button>
+        </div>
+        <div class="pro">
+            <img src="img/products/cl6.jpg">
+            <div class="des">
+                <span>Tokyo Ladies</span>
+                <h5>Women Regular High Rise Jeans</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+              <h4>₹1382</h4>
+            </div>
+            <button class="cart-button" onclick="addToCart('product2', 'Women Regular High Rise Jeans', 1382 ,'img/products/cl6.jpg')">
+                <span class="add-to-cart">Add to cart</span>
+                <span class="added">Added</span>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-box"></i>
+            </button>
+        </div>
+        <div class="pro">
+            <img src="img/products/cl15.jpg">
+            <div class="des">
+                <span>forever</span>
+                <h5>Women A-line Blue Dress</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1056</h4>
+            </div>
+             <button class="cart-button" onclick="addToCart('product3', 'Women A-line Blue Dress', 1056, 'img/products/cl15.jpg')">
+                <span class="add-to-cart">Add to cart</span>
+                <span class="added">Added</span>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-box"></i>
+            </button>
+        </div>
+        <div class="pro">
+            <img src="img/products/h9.jpg">
+            <div class="des">
+                <span>Asha</span>
+                <h5>Women Fit and Flare Black Dress</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1234</h4>
+            </div>
+             <button class="cart-button" onclick="addToCart('product4', 'Women Fit and Flare Black Dress', 1234, 'img/products/h9.jpg')">
+                <span class="add-to-cart">Add to cart</span>
+                <span class="added">Added</span>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-box"></i>
+            </button>
+        </div>
+        <div class="pro">
+            <img src="img/products/h15.jpg">
+            <div class="des">
+                <span>Clothera</span>
+                <h5>Men Casual Brown Jacket</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1732</h4>
+            </div>
+             <button class="cart-button" onclick="addToCart('product5', 'Men Casual Brown Jacket', 1732, 'img/products/h15.jpg')">
+                <span class="add-to-cart">Add to cart</span>
+                <span class="added">Added</span>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-box"></i>
+            </button>
+        </div>
+        <div class="pro">
+            <img src="img/products/h16.jpg">
+            <div class="des">
+                <span>Youngs</span>
+                <h5>Denim Blue Jacket</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1056</h4>
+            </div>
+             <button class="cart-button" onclick="addToCart('product6', 'Denim Blue Jacket', 1056, 'img/products/h16.jpg')">
+                <span class="add-to-cart">Add to cart</span>
+                <span class="added">Added</span>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-box"></i>
+            </button>
+        </div>
+        <div class="pro">
+            <img src="img/products/h10.jpg">
+            <div class="des">
+                <span>Clothera</span>
+                <h5>Men Aqua Blue Puffer Jacket</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹3551</h4>
+            </div>
+             <button class="cart-button" onclick="addToCart('product7', 'Men Aqua Blue Puffer Jacket', 3551, 'img/products/h10.jpg')">
+                <span class="add-to-cart">Add to cart</span>
+                <span class="added">Added</span>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-box"></i>
+            </button>
+        </div>
+        <div class="pro">
+            <img src="img/products/h13.jpg">
+            <div class="des">
+                <span>Omkares Traders</span>
+                <h5>Men Solid high neck White Sweater</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹3281</h4>
+            </div>
+             <button class="cart-button" onclick="addToCart('product8', 'Men Solid high neck White Sweater', 3281, 'img/products/h13.jpg')">
+                <span class="add-to-cart">Add to cart</span>
+                <span class="added">Added</span>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-box"></i>
+            </button>
+        </div>
+    </div>
+
+  </section> 
+
+
+  <section id="banner" class="section-m1">
+    <h4>Repair Services</h4>
+    <h2>Up to <span>70% Off </span>- All Shirts & Accessories</h2>
+    <button class="explore">Explore More</button>
+  </section>
+ 
+
+  <section id="product1" class="section-p1 "> 
+    <h1>New Arrivals</h1>
+    <p>Winter Collection</p>
+    <div class="pro-container">
+        <div class="pro">
+            <img src="img/products/w1.jpg">
+            <div class="des">
+                <span>SnakeTiger</span>
+                <h5>Women Full Sleeve Solid Full Neck Sweater</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹3427</h4>
+            </div>
+             <button class="cart-button" onclick="addToCart('product1', 'Women Full Sleeve Solid Full Neck Sweater', 3427, 'img/products/w1.jpg')">
+                <span class="add-to-cart">Add to cart</span>
+                <span class="added">Added</span>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-box"></i>
+            </button>
+        </div>
+        <div class="pro">
+            <img src="img/products/w2.jpg">
+            <div class="des">
+                <span>Tokyo Ladies</span>
+                <h5>Women White Full Puffy Jacket</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹4590</h4>
+            </div>
+             <button class="cart-button" onclick="addToCart('product3', 'Women White Full Puffy Jacket', 4590, 'img/products/w2.jpg')">
+                <span class="add-to-cart">Add to cart</span>
+                <span class="added">Added</span>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-box"></i>
+            </button>
+        </div>
+        <div class="pro">
+            <img src="img/products/w3.jpg">
+            <div class="des">
+                <span>forever</span>
+                <h5>Women Black Leather Jacket</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹4766</h4>
+            </div>
+             <button class="cart-button" onclick="addToCart('product3', 'Women Black Leather Jacket', 4766, 'img/products/w3.jpg')">
+                <span class="add-to-cart">Add to cart</span>
+                <span class="added">Added</span>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-box"></i>
+            </button>
+        </div>
+        <div class="pro">
+            <img src="img/products/w4.jpg">
+            <div class="des">
+                <span>Clothera</span>
+                <h5>Women Coat With Belt Light BLue Color</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹3112</h4>
+            </div>
+             <button class="cart-button" onclick="addToCart('product4', 'Women Coat With Belt Light BLue Color', 3112, 'img/products/w4.jpg')">
+                <span class="add-to-cart">Add to cart</span>
+                <span class="added">Added</span>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-box"></i>
+            </button>
+        </div>
+        <div class="pro">
+            <img src="img/products/w6.jpg">
+            <div class="des">
+                <span>Clothera</span>
+                <h5>Men Casual Red Puffer Jacket</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>2165</h4>
+            </div>
+             <button class="cart-button" onclick="addToCart('product5', 'Men Casual Red Puffer Jacket', 2165, 'img/products/w6.jpg')">
+                <span class="add-to-cart">Add to cart</span>
+                <span class="added">Added</span>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-box"></i>
+            </button>
+        </div>
+        <div class="pro">
+            <img src="img/products/cl17.jpg">
+            <div class="des">
+                <span>Youngs</span>
+                <h5>Men Blue Printed Sweater</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>2543</h4>
+            </div>
+             <button class="cart-button" onclick="addToCart('product6', 'Men Blue Printed Sweater', 2543, 'img/products/cl17.jpg')">
+                <span class="add-to-cart">Add to cart</span>
+                <span class="added">Added</span>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-box"></i>
+            </button>
+        </div>
+        <div class="pro">
+            <img src="img/products/w9.jpg">
+            <div class="des">
+                <span>Clothera</span>
+                <h5>Men Yellow Printed Design Sweatshirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>2945</h4>
+            </div>
+             <button class="cart-button" onclick="addToCart('product7', 'Men Yellow Printed Design Sweatshirt', 2945, 'img/products/w9.jpg')">
+                <span class="add-to-cart">Add to cart</span>
+                <span class="added">Added</span>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-box"></i>
+            </button>
+        </div>
+        <div class="pro">
+            <img src="img/products/w8.jpg">
+            <div class="des">
+                <span>Omkares Traders</span>
+                <h5>Men Grey Jacket</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹3891</h4>
+            </div>
+             <button class="cart-button" onclick="addToCart('product8', 'Men Grey Jacket', 3891, 'img/products/w8.jpg')">
+                <span class="add-to-cart">Add to cart</span>
+                <span class="added">Added</span>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-box"></i>
+            </button>
+        </div>
+    </div>
+  </section> 
+
+
+  <section id="collection"> 
+    <div class="bannermen">
+    </div>
+    <div class="bannerwomen"> 
+      </div>
+  </section>
+
+
+  <section id="text-banner">
+    <div class="seasonal">
+        <h2>SEASONAL SALE</h2>
+        <h3>Summer Collection 2024 - 30% Off</h3>
+      </div>
+      <div class="footwear">
+        <h2>NEW FOOTWEAR COLLECTION</h2>
+        <h3>Winter Collection</h3>
+        </div>
+        <div class="tops">
+            <h2>SHIRTS & TOPS</h2>
+            <h3>New Trendy Clothes</h3>
+          </div> 
+  </section>
+
+
+<section id="newsletter" class="section-p1 section-m1">
+   <div class="news">
+     <h4>Sign Up For Newsletters</h4>
+     <p>Get E-mail updates about our latest outfits and <span>special offers.</span></p>
+   </div>
+   <div class="form">
+    <input type="email" placeholder="enter your email" >
+    <button class="sign">Sign Up</button>
+   </div>
+</section>
+
+
+<footer class="section-p1">
+    <div class="col-contact">
+        <img src="img/logo banner.png" alt="">
+        <h3>Contact</h3>
+        <p><strong>Address:</strong> 123Tomland Road,Street45,Son Francisco</p>
+        <p><strong>Phone:</strong>+014444765/(+91)0123456745</p>
+        <p><strong>Hours:</strong>11:00-19:00,Mon-Sat</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-about">
+        <h3>About</h3>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <div class="col-account">
+        <h3>My Account</h3>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+
+    <div class="col-install">
+        <h3>Install App</h3>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+            <img src="img/pay/app.jpg" alt="">
+            <img src="img/pay/play.jpg" alt="">
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="img/pay/pay.png" alt="">
+    </div>
+
+    <div class="copyright">
+        <p>&copy; 2023 Clothera - All Rights Reserved</p>
+    </div>
+</footer>
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+<script>
+    const cartButtons = document.querySelectorAll('.cart-button');
+    
+    cartButtons.forEach(button => {
+        button.addEventListener('click', cartClick);
+    });
+    
+    function cartClick() {
+        let button = this;
+        button.classList.add('clicked');
+    }
+    </script>
+    <script src="app.js"></script>
+    <script  src="cart.js"></script>
+</body>
+</html>
