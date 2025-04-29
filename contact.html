@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> E-commerce </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <section id="header">
+    <a href="#"><img src="img/logo banner.png" class="logo" alt="Logo"></a>
+
+    <div>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+            <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+        </ul>
+    </div>
+    <div class="mobile">
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <i  id="bar" class="fas fa-outdent"></i>
+    </div>
+  </section>
+
+
+<section class="hero">
+    <div class="container">
+      <h1 class="hero-title">Get in Touch with Us</h1>
+      <p class="hero-subtitle">We'd love to hear from you! Whether you have a question, a comment, or just want to say hello, we're here to listen.</p>
+    </div>
+  </section>
+  
+<section class="contact-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="contact-title">Contact Details</h2>
+          <ul class="contact-list">
+            <li class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Address: 123Tomland Road,Street45,Son Francisco</span>
+            </li>
+            <li class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>Phone: (+91)0123456745</span>
+            </li>
+            <li class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>Email: <a href="mailto:harshclothera@gmail.com">harshclothera@gmail.com</a></span>
+            </li>
+          </ul>
+          <h2 class="contact-title">Social Media</h2>
+          <ul class="contact-list">
+            <li class="contact-item">
+              <i class="fab fa-facebook-f"></i>
+              <span><a href="http://facebook.com/example">Facebook</a></span>
+            </li>
+            <li class="contact-item">
+              <i class="fab fa-twitter"></i>
+              <span><a href="http://twitter.com/example">Twitter</a></span>
+            </li>
+            <li class="contact-item">
+              <i class="fab fa-instagram"></i>
+              <span><a href="http://instagram.com/example">Instagram</a></span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509123!2d144.9537353153163!3d-37.81627997975157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f0b1b5b%3A0x5045675218ceed0!2s123%20Main%20St%2C%20Anytown%2C%20USA!5e0!3m2!1sen!2sau!4v1610000000000!5m2!1sen!2sau" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-form">
+    <div class="container">
+      <h2 class="contact-title">Send Us a Message</h2>
+      <form action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+ 
+  <section class="team">
+    <div class="container">
+      <h2 class="team-title">Meet Our Team</h2>
+      <div class="team-members">
+        <h3 class="team-name">Harsh Pratap Singh</h3>
+        <p class="team-position">CEO</p>
+        <p class="team-email"><a href="mailto:harshsingh@example.com">harshinfo@expample.com</a></p>
+        <p class="team-phone">555-555-5555</p>
+      </div>
+      <div class="team-members">
+        <h3 class="team-name">Jane Smith</h3>
+        <p class="team-position">Creative Director</p>
+        <p class="team-email"><a href="mailto:jane.smith@example.com ">janesmith@example.com</a></p>
+        <p class="team-phone">555-555-5555</p>
+      </div>
+      <div class="team-members">
+        <h3 class="team-name">Emily Johnson</h3>
+        <p class="team-position">Marketing Manager</p>
+        <p class="team-email"><a href="mailto:emily.jhonson@example.com ">emilyjohnson@example.com</a></p>
+        <p class="team-phone">555-555-5555</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="faq">
+    <div class="container">
+      <h2 class="faq-title">Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3 class="faq-question">What are your business hours?</h3>
+        <p class="faq-answer">Our business hours are Monday - Saturday, 11am - 7pm.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">How do I track my order?</h3>
+        <p class="faq-answer">You can track your order by logging into your account and clicking on the "Order History" tab.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="final-cta">
+    <div class="container">
+      <h2 class="cta-title">We're Here to Help</h2>
+      <p class="cta-subtitle">Contact us today to learn more about our products and services.</p>
+      <button class="cta">Contact Us</button>
+    </div>
+  </section>
+
+
+<footer class="section-p1">
+    <div class="col-contact">
+        <img src="img/logo banner.png" alt="">
+        <h3>Contact</h3>
+        <p><strong>Address:</strong> 123Tomland Road,Street45,Son Francisco</p>
+        <p><strong>Phone:</strong>+014444765/(+91)0123456745</p>
+        <p><strong>Hours:</strong>11:00-19:00,Mon-Sat</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-about">
+        <h3>About</h3>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <div class="col-account">
+        <h3>My Account</h3>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+
+    <div class="col-install">
+        <h3>Install App</h3>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+            <img src="img/pay/app.jpg" alt="">
+            <img src="img/pay/play.jpg" alt="">
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="img/pay/pay.png" alt="">
+    </div>
+
+    <div class="copyright">
+        <p>&copy; 2023 Clothera - All Rights Reserved</p>
+    </div>
+</footer>
+
+    <script src="app.js"></script>
+</body>
+</html> 
